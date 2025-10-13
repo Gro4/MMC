@@ -43,7 +43,7 @@ nav a {
 	}
 	
 	.slider ul {
-	    display: flex;
+	    display:flex;;
 	    /*sino surt una sota altra*/
 	    padding: 0;
 	    width: 500%; /*SE CANVIA AIXÒ per a que lslider estigue complet*/
