@@ -65,41 +65,6 @@ nav a {
   object-fit: cover;
 }
 
-  @keyframes cambio {
-	    0% {
-	        margin-left: 0;
-	        /*quan comença esta al 0*/
-	    }
-	    20% {
-	        margin-left: 0;
-	        /*del 0-20 esta quiet*/
-	    }
-	    25% {
-	        /*del 21-24 fa el mov (5% de 20 = 1s)*/
-	        margin-left: -100%;
-	    }
-	    45% {
-	        /*del 25-45% quiet*/
-	        margin-left: -100%;
-	    }
-	    50% {
-	        /*del 46 al 49 es mou a -200 (mov esquerra)*/
-	        margin-left: -200%;
-	    }
-	    70% {
-	        /*del 50-70 quiet*/
-	        margin-left: -200%;
-	    }
-	    75% {
-	        /*del 71-74 mov esquerra*/
-	        margin-left: -300%;
-	    }
-	    100% {
-	        /*quiet*/
-	        margin-left: -300%;
-	    }
-    }
-
 
 
 h1 {
