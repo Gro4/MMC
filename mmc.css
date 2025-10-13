@@ -15,6 +15,7 @@ body {
 /* Navegación */
 nav ul {
     font-family: "punkid";
+    font-size: 2rem;
     list-style: none;
     display: flex;
     justify-content: center;
@@ -33,12 +34,73 @@ nav a {
     font-size: 2.75rem;
 }
 
-.muralinici {
-    display: flex;              /* Convierte la lista en un contenedor flexbox */
-    justify-content: center;    /* Centra los elementos hijos (los <li>) horizontalmente */
-    padding: 0;                 /* Elimina el relleno interno por defecto de la lista */
-    margin: 0;     
+.slider {
+	    width: 85%;
+	    margin: auto;
+        margin-top: 200px;
+	    overflow: hidden;
+	    /*si no es fica, surt inici-final de laltra*/
+	}
+	
+	.slider ul {
+	    display: flex;
+	    /*sino surt una sota altra*/
+	    padding: 0;
+	    width: 500%; /*SE CANVIA AIXÒ per a que lslider estigue complet*/
+	    /*aixi ocupa tot lample 1 img*/
+	    animation: cambio 20s infinite ease;
+	    animation-direction: alternate;
+	}
+	
+	.slider li {
+	    width: 100%;
+	    list-style: none;
+	}
+	
+	.slider img {
+  width: 100%;
+  height: auto;         /* ✅ mantiene proporción */
+  object-fit: contain;  /* ✅ asegura que la imagen se vea completa */
+  display: block;       /* elimina espacios en blanco debajo de las imágenes inline */
+  object-fit: cover;
 }
+
+  @keyframes cambio {
+	    0% {
+	        margin-left: 0;
+	        /*quan comença esta al 0*/
+	    }
+	    20% {
+	        margin-left: 0;
+	        /*del 0-20 esta quiet*/
+	    }
+	    25% {
+	        /*del 21-24 fa el mov (5% de 20 = 1s)*/
+	        margin-left: -100%;
+	    }
+	    45% {
+	        /*del 25-45% quiet*/
+	        margin-left: -100%;
+	    }
+	    50% {
+	        /*del 46 al 49 es mou a -200 (mov esquerra)*/
+	        margin-left: -200%;
+	    }
+	    70% {
+	        /*del 50-70 quiet*/
+	        margin-left: -200%;
+	    }
+	    75% {
+	        /*del 71-74 mov esquerra*/
+	        margin-left: -300%;
+	    }
+	    100% {
+	        /*quiet*/
+	        margin-left: -300%;
+	    }
+    }
+
+
 
 h1 {
   font-family: "punkid";             /* Tipus de lletra */
