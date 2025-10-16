@@ -12,6 +12,30 @@ body {
     line-height: 1.6;
 }
 
+h1 {
+  font-family: "punkid";             /* Tipus de lletra */
+  font-size: 15rem;                   /* Mida del text */
+  color:black;                  /* Color del text */
+  text-align: center;                /* Centrat horitzontalment */
+  padding-top: 5rem;
+  
+}
+
+h4{
+    font-family: "arial";             /* Tipus de lletra */
+    font-size: 20rem;                   /* Mida del text */
+    color:black;                  /* Color del text */
+    text-align: left;                /* Centrat horitzontalment */
+    margin: 3.5rem;
+  
+}
+
+h5{
+	font-family: "arial"; /* Tipus de lletra */
+    font-style:oblique; /* Text oblicat */
+    font-size: 56px;
+    color:white;
+}
 /* Navegación */
 nav ul {
     font-family: "punkid";
@@ -67,26 +91,11 @@ nav a {
 
 
 
-h1 {
-  font-family: "punkid";             /* Tipus de lletra */
-  font-size: 15rem;                   /* Mida del text */
-  color:black;                  /* Color del text */
-  text-align: center;                /* Centrat horitzontalment */
-  padding-top: 5rem;
-  
-}
 
-h4{
-    font-family: "arial";             /* Tipus de lletra */
-    font-size: 20rem;                   /* Mida del text */
-    color:black;                  /* Color del text */
-    text-align: left;                /* Centrat horitzontalment */
-    margin: 3.5rem;
-  
+.enfosquir {
+    transition: 0.5s ease;;
 }
-
-h5{
-	font-family: "arial";             /* Tipus de lletra */
-	font-style:oblique;               /* Text oblicat */
+.enfosquir:hover{
+    filter: brightness(40%);
+    cursor: pointer;
 }
-
