@@ -89,13 +89,3 @@ nav a {
   object-fit: cover;
 }
 
-
-
-
-.enfosquir {
-    transition: 0.5s ease;;
-}
-.enfosquir:hover{
-    filter: brightness(40%);
-    cursor: pointer;
-}
