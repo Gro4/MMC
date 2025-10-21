@@ -5,7 +5,6 @@
   font-style: normal;  /* Opcional */
 }
 
-
 body {
     margin: 0;
     padding: 0;
@@ -18,7 +17,6 @@ h1 {
   color:black;                  /* Color del text */
   text-align: center;                /* Centrat horitzontalment */
   padding-top: 5rem;
-  
 }
 
 h4{
@@ -59,33 +57,60 @@ nav a {
 }
 
 .slider {
-	    width: 85%;
-	    margin: auto;
-        margin-top: 200px;
-	    overflow: hidden;
-	    /*si no es fica, surt inici-final de laltra*/
-	}
-	
-	.slider ul {
-	    display:flex;;
-	    /*sino surt una sota altra*/
-	    padding: 0;
-	    width: 500%; /*SE CANVIA AIXÒ per a que lslider estigue complet*/
-	    /*aixi ocupa tot lample 1 img*/
-	    animation: cambio 20s infinite ease;
-	    animation-direction: alternate;
-	}
-	
-	.slider li {
-	    width: 100%;
-	    list-style: none;
-	}
-	
-	.slider img {
-  width: 100%;
-  height: auto;         /* ✅ mantiene proporción */
-  object-fit: contain;  /* ✅ asegura que la imagen se vea completa */
-  display: block;       /* elimina espacios en blanco debajo de las imágenes inline */
-  object-fit: cover;
+  width: 85%;
+  margin: auto;
+  margin-top: 200px;
+  overflow: hidden;
 }
 
+.slider ul {
+  display: flex;
+  padding: 0;
+  width: 500%;
+  animation: cambio 20s infinite ease;
+  animation-direction: alternate;
+}
+
+.slider li {
+  width: 100%;
+  list-style: none;
+}
+
+.slider img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+.contenidor-carrusel {
+  position: relative;
+}
+
+.boto-carrusel {
+  position: absolute;
+  top: 99%; /*ns com baixar-ho mes*/
+  left: 20%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 30px 40px;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.boto-carrusel:hover {
+  background-color: rgb(255, 255, 255);
+  color:black;
+  transform: translate(-50%, -50%) scale(1.05);
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
+
+.boto-carrusel h2, .boto-carrusel p {
+  margin: 0;
+}
