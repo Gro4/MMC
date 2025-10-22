@@ -15,7 +15,7 @@ h1 {
   font-family: "punkid";             /* Tipus de lletra */
   font-size: 15rem;                   /* Mida del text */
   color:black;                  /* Color del text */
-  text-align: left;                /* Centrat horitzontalment */
+  text-align: center;                /* Centrat horitzontalment */
   padding-top: 5rem;
 }
 
@@ -116,15 +116,25 @@ nav a {
 }
 
 .contacte {
-    padding: 2px;
+    background-color: black;
+    color: white;
+    padding-bottom: 150px;
   }
 
+.info-contacte {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-left: 90px;
+  color: white;
+}
+
 .form-container { /*contacte*/
+  background-color: white;
     width: 35%;
-    height: 50%;
     padding: 32px;
     border-radius: 8px;
-    margin-left: 180px;
+    margin-left: 90px;
+    color: black;
   }
 
    form label { /*el que esta dins del input*/
@@ -137,14 +147,12 @@ nav a {
     padding: 12px;
     margin-bottom: 16px;
     border-radius: 4px;
-    border: 1px solid #555;
+    border: 1px solid black;
   }
 
   form textarea#message {
-
+  border-radius: 4px;
   border-color: black;
-  color: black
-
   }
   
   form button {
@@ -157,6 +165,34 @@ nav a {
   }
 
    form button:hover {
-    background-color: rgba(230, 170, 29);
+    background-color: #e6aa1e;
+    color: white;
   }
   
+.info {
+  position: absolute;  
+  margin-left: 850px;
+  margin-top: 100px;
+  color: white;
+}
+
+.museu {
+  position: absolute;  
+  margin-left: 850px;
+  margin-top: 200px;
+  color: white;
+}
+
+.infomuseu {
+  position: absolute;  
+  margin-left: 850px;
+  margin-top: 300px;
+  color: white;
+}
+
+.correu {
+  position: absolute;  
+  margin-left: 850px;
+  margin-top: 426px;
+  color: #A8C7FA;
+}
