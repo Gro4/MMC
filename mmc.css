@@ -86,12 +86,14 @@ nav a {
 
 .boto-carrusel {
   position: absolute;
-  top: 99%; /*ns com baixar-ho mes*/
+  width: 25%;
+  height:20%;
+  top: 95%; /*ns com baixar-ho mes*/
   left: 20%;
   transform: translate(-50%, -50%);
   background-color: rgba(230, 170, 29, 0.8);
   color: #fff;
-  padding: 30px 40px;
+  padding: 3rem 3rem; /*canviar*/
   border-radius: 10px;
   text-align: center;
   text-decoration: none;
@@ -194,3 +196,73 @@ nav a {
   color: #A8C7FA;
 }
 
+.Horari {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  color: black;
+}
+
+/* --- 1. ESTILOS DE TUS CAJAS (Limpiados) --- */
+/* Agrupamos estilos comunes para no repetir código */
+.col1, .col, .col3 {
+  padding: 20px;
+  font-size: 20px;
+  border-radius: 10px;
+  /* IMPORTANTE: Quitamos el margen individual. 
+     El contenedor se encargará ahora del espacio. */
+  margin: 30px 0; 
+  
+  /* Esto hace que las columnas crezcan por igual en Desktop */
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+.col1 {
+  background-color: black;
+  font-weight: bold;
+  color: white;
+}
+
+.col {
+  background-color: white;
+  color: black;
+  /* Forma corta y limpia para el borde */
+  border: 1px solid black; 
+}
+
+.col3 {
+  background-color: #e6aa1e;
+  font-weight: bold;
+  color: black;
+}
+
+/* Esta clase .col4 solo tenía margen. Si la necesitas,
+   debes darle un propósito o contenido. */
+.col4 {
+  margin: 0; 
+}
+
+
+/* --- 2. EL CONTENEDOR RESPONSIVE --- */
+
+.contenedor-responsive {
+  display: flex;
+  
+  /* ---- VISTA MÓVIL (Por defecto) ---- */
+  flex-direction: column; /* Apila los hijos verticalmente */
+  gap: 20px; /* Espacio limpio ENTRE las cajas (en vez de 'margin') */
+  padding: 15px; /* Un pequeño espacio en los bordes de la pantalla */
+}
+
+
+/* --- 3. LA MEDIA QUERY (La parte "responsive") --- */
+
+/* Cuando la pantalla sea de 768px o MÁS (tablets/desktops) */
+@media (min-width: 768px) {
+  
+  .contenedor-responsive {
+    /* Pone los hijos en fila */
+    flex-direction: row; 
+  }
+  
+}
