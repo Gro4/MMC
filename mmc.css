@@ -17,15 +17,21 @@ body {
 
 h1 {
   font-family: "punkid";             /* Tipus de lletra */
-  font-size: 15rem;                   /* Mida del text */
+  font-size: 5rem;                   /* Mida del text */
   color:black;                  /* Color del text */
   text-align: center;                /* Centrat horitzontalment */
   padding-top: 5rem;
 }
-
+h2 {
+  font-family: "punkid";             /* Tipus de lletra */
+  font-size: 5rem;                   /* Mida del text */
+  color:black;                  /* Color del text */
+  text-align: center;                /* Centrat horitzontalment */
+  padding-top: 5rem;
+}
 h4{
     font-family: "arial";             /* Tipus de lletra */
-    font-size: 20rem;                   /* Mida del text */
+    font-size: 3rem;                   /* Mida del text */
     color:black;                  /* Color del text */
     text-align: left;                /* Centrat horitzontalment */
     margin: 3.5rem;
@@ -110,7 +116,7 @@ nav a {
   box-shadow: 0 8px 20px rgba(0,0,0,0.5);
 }
 
-.boto-carrusel h2, .boto-carrusel p {
+.boto-carrusel p {
   margin: 0;
 }
 
@@ -265,4 +271,36 @@ nav a {
     flex-direction: row; 
   }
   
+}
+
+/* GSAP */
+ .sect {
+  min-height: 50vh; /* Fa que cada secció ocupi com a mínim el 100% de l'alçada de la finestra (Viewport Height) */
+  display: flex; /* Utilitza Flexbox per a la disposició dels elements interiors */
+  justify-content: center; /* Centra horitzontalment el contingut (eix principal) */
+  align-items: center; /* Centra verticalment el contingut (eix transversal) */
+  position: relative; /* Estableix el context de posicionament per als elements fills posicionats de manera absoluta (com el títol h2) */
+  overflow: hidden; /* Oculta qualsevol contingut que surti dels límits de la secció (important per a animacions d'entrada/sortida) */
+ }
+
+
+ .img-section {
+  width: 85%; /* Fa que la imatge ocupi el 100% de l'amplada de la secció */
+  height: auto; /* Manté la proporció de l'imatge */
+  object-fit: cover; /* Assegura que la imatge cobreixi tota la secció sense estirar-se (pot retallar-se) */
+  opacity: 0; /* ESTAT INICIAL PER A L'ANIMACIÓ: Fa que la imatge sigui completament transparent (invisible al carregar) */
+   transform: scale(0.95); /* ESTAT INICIAL PER A L'ANIMACIÓ: Redueix lleugerament la imatge */}
+
+/* Colores de fondo para cada sección (Ara correctament fora del selector .img-section) 
+.section1 { background-color: #1abc9c; }
+.section2 { background-color: #3498db; }
+.section3 { background-color: #9b59b6; }
+.section4 { background-color: #e67e22; }
+
+/* Media Query (Ara correctament aïllat) */
+
+
+/* Media Query (Ara correctament aïllat) */
+@media (max-width: 768px) {
+  h2 { font-size: 2rem; }
 }
