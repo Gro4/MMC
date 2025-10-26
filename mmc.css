@@ -29,6 +29,7 @@ h2 {
   text-align: center;                /* Centrat horitzontalment */
   padding-top: 5rem;
 }
+
 h4{
     font-family: "arial";             /* Tipus de lletra */
     font-size: 3rem;                   /* Mida del text */
@@ -173,13 +174,16 @@ nav a {
   height: 100%;
 
   /* 2. Aspecte: Fons fosc semitransparent */
-
   background-color: rgba(7, 24, 33, 0.7);
 
   /* 3. Text: Centrat i de color blanc */
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  
+  /* === AQUEST ÉS EL CANVI PRINCIPAL === */
+  /* Canviem 'center' per 'flex-start' per moure el h3/p a dalt */
+  justify-content: center; 
+  
   color: white;
   padding: 20px;
   text-align: center;
@@ -189,11 +193,31 @@ nav a {
   transition: opacity 0.4s ease-in-out;
 }
 
-/* L'efecte HOVER
-/* Quan passem el ratolí per sobre de la secció... */
+.mural-overlay h3 {
+  font-size: 300%; 
+}
+
+.mural-overlay p {
+  margin-top: 10px; 
+  font-style: italic;
+}
+
+.mural-overlay .text-central {
+ width: 80%;
+ margin-top: 60px; 
+
+ margin-left: auto;
+ margin-right: auto;
+  
+ font-style: normal;
+ font-size: 120%;
+}
+
+/* L'efecte HOVER */
 .sect:hover .mural-overlay {
   opacity: 1;
 }
+
 
 
 
