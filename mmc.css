@@ -120,6 +120,9 @@ nav a {
   margin: 0;
 }
 .textruta {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 150px;
   margin-bottom: 150px; 
  
@@ -128,6 +131,71 @@ nav a {
 .mapa img {
   width: 70%;
 }
+
+/* GSAP */
+ .sect {
+  min-height: 50vh; /* Fa que cada secció ocupi com a mínim el 100% de l'alçada de la finestra (Viewport Height) */
+  display: flex; /* Utilitza Flexbox per a la disposició dels elements interiors */
+  justify-content: center; /* Centra horitzontalment el contingut (eix principal) */
+  align-items: center; /* Centra verticalment el contingut (eix transversal) */
+  position: relative; /* Estableix el context de posicionament per als elements fills posicionats de manera absoluta (com el títol h2) */
+  overflow: hidden; /* Oculta qualsevol contingut que surti dels límits de la secció (important per a animacions d'entrada/sortida) */
+ }
+
+
+ .img-section {
+  width: 85%; /* Fa que la imatge ocupi el 100% de l'amplada de la secció */
+  height: auto; /* Manté la proporció de l'imatge */
+  object-fit: cover; /* Assegura que la imatge cobreixi tota la secció sense estirar-se (pot retallar-se) */
+  opacity: 0; /* ESTAT INICIAL PER A L'ANIMACIÓ: Fa que la imatge sigui completament transparent (invisible al carregar) */
+   transform: scale(0.95); /* ESTAT INICIAL PER A L'ANIMACIÓ: Redueix lleugerament la imatge */}
+
+/* Colores de fondo para cada sección (Ara correctament fora del selector .img-section) 
+.section1 { background-color: #1abc9c; }
+.section2 { background-color: #3498db; }
+.section3 { background-color: #9b59b6; }
+.section4 { background-color: #e67e22; }
+
+/* Media Query (Ara correctament aïllat) */
+
+
+/* Media Query (Ara correctament aïllat) */
+@media (max-width: 768px) {
+  h2 { font-size: 2rem; }
+}
+
+.mural-overlay {
+  /* 1. Posició: Per sobre de la imatge */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  /* 2. Aspecte: Fons fosc semitransparent */
+
+  background-color: rgba(7, 24, 33, 0.7);
+
+  /* 3. Text: Centrat i de color blanc */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 20px;
+  text-align: center;
+
+  /* 4. Animació: Amagat per defecte i amb transició suau */
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+
+/* L'efecte HOVER
+/* Quan passem el ratolí per sobre de la secció... */
+.sect:hover .mural-overlay {
+  opacity: 1;
+}
+
+
 
 .contacte {
     background-color: rgb(0, 0, 0);
@@ -270,31 +338,6 @@ nav a {
   
 }
 
-/* GSAP */
- .sect {
-  min-height: 50vh; /* Fa que cada secció ocupi com a mínim el 100% de l'alçada de la finestra (Viewport Height) */
-  display: flex; /* Utilitza Flexbox per a la disposició dels elements interiors */
-  justify-content: center; /* Centra horitzontalment el contingut (eix principal) */
-  align-items: center; /* Centra verticalment el contingut (eix transversal) */
-  position: relative; /* Estableix el context de posicionament per als elements fills posicionats de manera absoluta (com el títol h2) */
-  overflow: hidden; /* Oculta qualsevol contingut que surti dels límits de la secció (important per a animacions d'entrada/sortida) */
- }
-
-
- .img-section {
-  width: 85%; /* Fa que la imatge ocupi el 100% de l'amplada de la secció */
-  height: auto; /* Manté la proporció de l'imatge */
-  object-fit: cover; /* Assegura que la imatge cobreixi tota la secció sense estirar-se (pot retallar-se) */
-  opacity: 0; /* ESTAT INICIAL PER A L'ANIMACIÓ: Fa que la imatge sigui completament transparent (invisible al carregar) */
-   transform: scale(0.95); /* ESTAT INICIAL PER A L'ANIMACIÓ: Redueix lleugerament la imatge */}
-
-/* Colores de fondo para cada sección (Ara correctament fora del selector .img-section) 
-.section1 { background-color: #1abc9c; }
-.section2 { background-color: #3498db; }
-.section3 { background-color: #9b59b6; }
-.section4 { background-color: #e67e22; }
-
-/* Media Query (Ara correctament aïllat) */
 
 
 /* Media Query (Ara correctament aïllat) */
