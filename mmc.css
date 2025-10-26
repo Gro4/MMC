@@ -369,8 +369,12 @@ nav a {
   h2 { font-size: 2rem; }
 }
 
+footer {
+  /* Un blau fosc, el mateix que l'overlay dels murals */
+  background-color: #6B6B6B; 
+}
 .footer-link {
-  color: white;
+color: white;
 transition: color 0.2s ease;
 }
 
