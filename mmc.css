@@ -119,9 +119,18 @@ nav a {
 .boto-carrusel p {
   margin: 0;
 }
+.textruta {
+  margin-top: 150px;
+  margin-bottom: 150px; 
+ 
+}
+
+.mapa img {
+  width: 70%;
+}
 
 .contacte {
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     color: white;
     padding-bottom: 150px;
   }
@@ -130,8 +139,8 @@ nav a {
   width: 80%;
   margin-top: 100px;
   margin-bottom: 100px;
-  color: yellow;
-   margin-left: 90px;
+  color: rgb(208, 169, 26);
+  margin-left: 90px;
 }
 .form-container { /*contacte*/
   background-color: white;
