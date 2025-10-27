@@ -50,7 +50,7 @@ h5{
 nav ul {
     font-family: "punkid";
     display: flex;
-    padding: 20px;
+    padding: 15px;
 }
 
 nav li {
@@ -248,47 +248,6 @@ nav a {
     color: white;
     padding-bottom: 150px;
   }
-
-.info-contacte {
-  margin-top: 100px;
-  margin-bottom: 100px;
-  color: rgb(208, 169, 26);
-}
-
-.link-contacte-email {
-  color: #A8C7FA; 
-}
-
-.link-contacte-email:hover {
-  color: #cde0ff;
-}
-
-
-   form label { /*el que esta dins del input*/
-    display: block;
-    margin-bottom: 8px;
-    border-radius: 4px;
-  border-color: black;
-    
-  }
-
-  form textarea#message {
-  border-color: black;
-  }
-  
-  form button {
-    background-color: black ;
-    color: white;
-    padding: 12px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-
-   form button:hover {
-    background-color: #e6aa1e;
-    color: white;
-  }
   
 .info {
   position: absolute;  
@@ -318,6 +277,14 @@ nav a {
   color: #A8C7FA;
 }
 
+.link-contacte-email {
+  color: #A8C7FA; 
+}
+
+.link-contacte-email:hover {
+  color: #cde0ff;
+}
+
 .Horari {
   margin-top: 100px;
   margin-bottom: 100px;
@@ -338,6 +305,18 @@ nav a {
   color: #e6aa1e; 
 }
 
+.btn-entrada {
+  background-color: #212529;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* 2. El 'hover' que canvia de color */
+.btn-entrada:hover {
+  background-color: #e6aa1e; /* El teu color groc/daurat */
+  color: black;
+}
 
 /* --- 1. ESTILOS DE TUS CAJAS (Limpiados) --- */
 /* Agrupamos estilos comunes para no repetir código */

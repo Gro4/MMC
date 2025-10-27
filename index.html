@@ -4,10 +4,10 @@
 <head>
   <meta charset="UTF-8" content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
   <title>MMC</title>
-  <link rel="stylesheet" href="mmc.css">
   <link rel="icon" type="image/png" href="./img/logo3.png">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+   <link rel="stylesheet" href="mmc.css">
 </head>
 
 <body>
@@ -65,7 +65,7 @@
  <main>
   <section id="Ruta">
     <section class="ruta">
-      <h2>Ruta</h2>
+      <h2 class="display-4 text-center">Ruta</h2>
       <div class="textruta text-center fs-4">
       <p>Benvingut a la Ruta MMC, un viatge a cel obert pel cor creatiu de Catalunya. <br>Descobreix els murals més emblemàtics i les obres d'art urbà que transformen les ciutats en galeries a l'aire lliure.<br>
         <br>
@@ -123,7 +123,7 @@
        
 
        <section id="Murals">
-  <h2>Murals</h2>
+  <h2 class="display-4 text-center">Murals</h2>
 
   <section class="sect">
     <img class="mural1 img-section d-block w-100" src="./img/reverie.png" alt="Reverie:Londres, Mural...">
@@ -216,7 +216,7 @@
 <section id="Museu" class="py-5">
     <div class="container">
 
-        <h2>El Museu</h2>
+        <h2 class="display-4 text-center">El Museu</h2>
         <p class="text-center fs-5 mb-5">Descobreix la rica història i evolució del MMC a través dels seus murals i exposicions permanents. El nostre museu és un viatge visual que et connecta amb l'art urbà i la cultura contemporània.</p>
 
         <div class="row align-items-center my-5">
@@ -285,7 +285,7 @@
          
        
       <section id="Contacte" class="container py-5">
-    <h2>Contacte</h2>
+    <h2 class="display-4 text-center">Contacte</h2>
 
     <div class="row">
 
@@ -327,10 +327,10 @@
                 <p class="fs-2">
                     Museu Barcelona
                 </p>
-                <p class="fst-italic fs-3">
+                <p class="fst-italic fs-3 fw">
                     C/ de la Riera Alta, 4, 08001 Barcelona<br>
-                    Telèfon: +34 933 123 456<br>
-                    Horari: Dilluns a Dissabte de 10:00 a 19:00 h
+                      <strong>Telèfon:</strong> +34 933 123 456<br>
+                    <strong>Horari:</strong> Dilluns a Dissabte de 10:00 a 19:00 h
                 </p>
                 <p class="fst-italic fs-3">
                     <a href="mailto:mmc@mmc.cat" class="link-contacte-email">
@@ -358,57 +358,108 @@
     </div> 
 </section>
 
+<section id="Entrades" class="py-5 bg-body-secondary">
+    <div class="container">
+        <h2 class="display-4 text-center">Entrades</h2>
+        
 
-        <section id="Entrades">
-        <h2>Entrades</h2>
-        <h4 class="Horari fs-2 fw-bold">Horari</h4>
-       </section>
-      <div class="contenedor-responsive text-center">
-  <div class="row row-cols-5">
-     <div class="col4"></div>
-     <div class="col4"></div>
-    <div class="col3 fw-normal">Horari gratuït</div>
-    <div class="col4"></div>
-    <div class="co4"></div>
-    <div class="col1">Dilluns</div>
-    <div class="col fw-normal">Column</div>
-    <div class="col fw-normal">Column</div>
-     <div class="col fw-normal">Column</div>
-    <div class="col fw-normal">Column</div>
-  <div class="col1">Dimarts</div>
-    <div class="col fw-normal">Column</div>
-    <div class="col fw-normal">Column</div>
-    <div class="col fw-normal">Column</div>
-    <div class="col fw-normal">Column</div>
-    <div class="col1">Dimecres</div>
-    <div class="col fw-normal">Column</div>
-    <div class="col fw-normal">Column</div>
-    <div class="col fw-normal">Column</div>
-    <div class="col fw-normal">Column</div>
-   <div class="col1">Dijous</div>
-    <div class="col fw-normal">Column</div>
-    <div class="col fw-normal">Column</div>
-    <div class="col fw-normal">Column</div>
-   <div class="col fw-normal">Column</div>
-    <div class="col1">Divendres</div>
-    <div class="col fw-normal">Column</div>
-    <div class="col fw-normal">Column</div>
-    <div class="col fw-normal">Column</div>
-    <div class="col fw-normal">Column</div>
-     <div class="col1">Dissabte</div>
-    <div class="col fw-normal">Column</div>
-    <div class="col fw-normal">Column</div>
-    <div class="col fw-normal">Column</div>
-    <div class="col fw-normal">Column</div>
-    <div class="col1">Diumenge</div>
-    <div class="col fw-normal">Column</div>
-    <div class="col fw-normal">Column</div>
-    <div class="col fw-normal">Column</div>
-    <div class="col fw-normal">Column</div>
+        <div class="row justify-content-center">
+            <div class="col-lg-10 col-xl-9"> 
 
- 
-  </div>
-</div>
+                <div class="card shadow-sm mb-4 entrada-fila">
+                    <div class="row g-0">
+                        <div class="col-md-4 col-lg-3 bg-dark text-white p-4 d-flex flex-column justify-content-center text-center rounded-start">
+                            <h3 class="fs-2 fw-bold">ENTRADA GENERAL</h3>
+                            <p class="fs-2 fw-bold">12€</p>
+                        </div>
+                        <div class="col-md-8 col-lg-9">
+                            <div class="card-body p-4 d-flex flex-column flex-lg-row align-items-center h-100">
+                                <ul class="list-unstyled mb-4 mb-lg-0 me-lg-auto">
+                                    <li class="mb-2"><i class="bi bi-check-circle me-2"></i>Accés complet a la col·lecció</li>
+                                    <li class="mb-2"><i class="bi bi-check-circle me-2"></i>Accés a exposicions temporals</li>
+                                    <li class="text-muted"><i class="bi bi-x-circle me-2"></i>Audioguia no inclosa</li>
+                                </ul>
+                                <a class="btn btn-entrada w-lg-auto ms-lg-4 fs-5">
+                                    Comprar
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card shadow-sm mb-4 entrada-fila">
+                    <div class="row g-0">
+                        <div class="col-md-4 col-lg-3 bg-dark text-white p-4 d-flex flex-column justify-content-center text-center rounded-start">
+                            <h3 class="fs-2 fw-bold">ENTRADA REDUÏDA</h3>
+                            <p class="fs-2 fw-bold">8€</p>
+                        </div>
+                        <div class="col-md-8 col-lg-9">
+                            <div class="card-body p-4 d-flex flex-column flex-lg-row align-items-center h-100">
+                                <ul class="list-unstyled mb-4 mb-lg-0 me-lg-auto">
+                                    <li class="mb-2"><i class="bi bi-check-circle me-2"></i>Estudiants, majors de 65, premsa</li>
+                                    <li class="mb-2"><i class="bi bi-check-circle me-2"></i>Accés complet a la col·lecció</li>
+                                    <li class="mb-2"><i class="bi bi-check-circle me-2"></i>Accés a exposicions temporals</li>
+                                </ul>
+                                <a class="btn btn-entrada w-lg-auto ms-lg-4 fs-5 ">
+                                    Comprar
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card shadow-sm mb-4 entrada-fila">
+                    <div class="row g-0">
+                        <div class="col-md-4 col-lg-3 bg-dark text-white p-4 d-flex flex-column justify-content-center text-center rounded-start">
+                            <h3 class="fs-2 fw-bold">ENTRADA GRATUÏTA</h3>
+                        </div>
+                        <div class="col-md-8 col-lg-9">
+                            <div class="card-body p-4 d-flex flex-column flex-lg-row align-items-center h-100">
+                                <ul class="list-unstyled mb-4 mb-lg-0 me-lg-auto">
+                                    <li class="mb-2"><i class="bi bi-check-circle me-2"></i>Menors de 16 anys</li>
+                                    <li class="mb-2"><i class="bi bi-check-circle me-2"></i>Discapacitats</li>
+                                    <li class="mb-2"><i class="bi bi-check-circle me-2"></i>Persones en situació d'atur</li>
+                                </ul>
+                                <a class="btn btn-entrada w-lg-auto ms-lg-4 fs-5">
+                                    Gratuït
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card shadow-sm mb-4 entrada-fila">
+                    <div class="row g-0">
+                        <div class="col-md-4 col-lg-3 bg-dark text-white p-4 d-flex flex-column justify-content-center text-center rounded-start">
+                            <h3 class="fs-2 fw-bold">GRUPS I VISITES</h3>
+                        </div>
+                        <div class="col-md-8 col-lg-9">
+                            <div class="card-body p-4 d-flex flex-column flex-lg-row align-items-center h-100">
+                                <ul class="list-unstyled mb-4 mb-lg-0 me-lg-auto">
+                                    <li class="mb-2"><i class="bi bi-check-circle me-2"></i>Grups de 10 o més persones</li>
+                                    <li class="mb-2"><i class="bi bi-check-circle me-2"></i>Visites escolars i guiades</li>
+                                    <li class="mb-2"><i class="bi bi-check-circle me-2"></i>Reserva prèvia obligatòria</li>
+                                </ul>
+                                <a class="btn btn-entrada w-lg-auto btn-lg ms-lg-4 fs-5">
+                                    Contactar
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div> </div> </div> </section>
+
+             <div class="text-center">
+            <p class="Horari fs-2 fw-bold text-black">Horari</p>
+            <p class="fs-4 text-muted">
+                De dimarts a dissabte: 10:00h – 20:00h
+            </p>
+            <p class="fs-4 text-muted">
+                Diumenges i festius: 10:00h – 15:00h
+            </p>
+        </div>
+      
            
   </main>
     
