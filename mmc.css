@@ -220,6 +220,31 @@ nav a {
   opacity: 1;
 }
 
+.fotomuseu1 {
+  width: 75%;
+  height: auto;
+  margin-left: 12%;
+  margin-top: 50px;
+  margin-bottom: 150px; 
+}
+
+.fotomuseu2 {
+  width: 75%;
+  height: auto;
+  margin-left: 12%;
+  margin-top: 50px;
+  margin-bottom: 150px;
+  margin-left: 155%;
+}
+
+.fotomuseu3 {
+  width: 75%;
+  height: auto;
+  margin-left: 12%;
+  margin-top: 50px;
+  margin-bottom: 150px; 
+}
+
 .contacte {
     background-color: rgb(0, 0, 0);
     color: white;
