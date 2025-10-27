@@ -255,31 +255,24 @@ nav a {
   color: rgb(208, 169, 26);
 }
 
+.link-contacte-email {
+  color: #A8C7FA; 
+}
 
-.form-container { /*contacte*/
-  background-color: white;
-    width: 35%;
-    padding: 32px;
-    border-radius: 8px;
-    margin-left: 90px;
-    color: black;
-  }
+.link-contacte-email:hover {
+  color: #cde0ff;
+}
+
 
    form label { /*el que esta dins del input*/
     display: block;
     margin-bottom: 8px;
-  }
-
-  form input,form textarea {
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 16px;
     border-radius: 4px;
-    border: 1px solid black;
+  border-color: black;
+    
   }
 
   form textarea#message {
-  border-radius: 4px;
   border-color: black;
   }
   
@@ -330,6 +323,21 @@ nav a {
   margin-bottom: 100px;
   color: black;
 }
+
+.social-link {
+  color: white; /* Color de la icona per defecte (blanc) */
+  text-decoration: none; /* Treu el subratllat de l'enllaç */
+  font-size: 2.5rem; /* Mida de les icones (ajusta-ho si vols) */
+  margin-right: 1.25rem; /* Espaiat entre les icones */
+  
+  /* Aquesta és la màgia per a una transició suau */
+  transition: color 0.3s ease; 
+}
+
+.social-link:hover {
+  color: #e6aa1e; 
+}
+
 
 /* --- 1. ESTILOS DE TUS CAJAS (Limpiados) --- */
 /* Agrupamos estilos comunes para no repetir código */
