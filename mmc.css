@@ -41,10 +41,9 @@ h4{
 }
 
 h5{
-	font-family: "arial"; /* Tipus de lletra */
-    font-style:oblique; /* Text oblicat */
-    font-size: 56px;
-    color:white;
+    font-size: 26px;
+    color:black;
+    font-style: bold;
 }
 /* Navegación */
 nav ul {
