@@ -250,12 +250,12 @@ nav a {
   }
 
 .info-contacte {
-  width: 80%;
   margin-top: 100px;
   margin-bottom: 100px;
   color: rgb(208, 169, 26);
-  margin-left: 90px;
 }
+
+
 .form-container { /*contacte*/
   background-color: white;
     width: 35%;

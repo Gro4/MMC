@@ -202,7 +202,7 @@
 
 
 
-<section id="Museu" class="bg-light py-5">
+<section id="Museu" class="py-5">
     <div class="container">
 
         <h2>El Museu</h2>
@@ -273,40 +273,63 @@
     </div> </section>
          
        
-       <section id="Contacte">
-          <section class="contacte">
+      <section id="Contacte" class="container py-5">
         <h2>Contacte</h2>
-        <h4 class="info-contacte fw-bold fst-italic"> Si tens alguna pregunta o vols més informació sobre les nostres exposicions i activitats, no dubtis en posar-te en contacte amb nosaltres mitjançant el formulari següent. Estarem encantats d'ajudar-te!
-      </h4>
-        <p class="info fw-bold fs-1">
-            Contacta'ns
-        </p>
-         <p class="museu fs-2"> Museu Barcelona</p>
-        <p class="infomuseu fst-italic fs-3">
-            C/ de la Riera Alta, 4, 08001 Barcelona<br>
-            Telèfon: +34 933 123 456<br>
-            Horari: Dilluns a Dissabte de 10:00 a 19:00 h</p>
-          <p class="correu fst-italic text-decoration-underline fs-3">
-             mmc@mmc.cat
+    
+    <div class="row">
 
-        <div class="form-container">
-      <form action="#" method="POST">
-        <label for="name">Nom</label>
-        <input type="text" id="name" name="name" required>
+        <div class="col-lg-7 mb-4 mb-lg-0">
+            
+            <h3 class="fw-bold mb-3">Envia'ns un missatge</h3>
+            
+            <form action="#" method="POST">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Nom</label>
+                    <input type="text" id="name" name="name" class="form-control" required>
+                </div>
+                
+                <div class="mb-3">
+                    <label for="email" class="form-label">Correu electrònic</label>
+                    <input type="email" id="email" name="email" class="form-control" required>
+                </div>
 
-        <label for="email">Correu electrònic</label>
-        <input type="email" id="email" name="email" required>
+                <div class="mb-3">
+                    <label for="subject" class="form-label">Assumpte</label>
+                    <input type="text" id="subject" name="subject" class="form-control" required>
+                </div>
 
-        <label for="subject">Assumpte</label>
-        <input type="text" id="subject" name="subject" required>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Missatge</label>
+                    <textarea id="message" name="message" rows="5" class="form-control" required></textarea>
+                </div>
 
-        <label for="message">Missatge</label>
-        <textarea id="message" name="message" rows="8" required></textarea>
+                <button type="submit" class="btn btn-primary w-100 btn-lg">Enviar</button>
+            </form>
+        </div>
 
-        <button type="submit">Enviar</button>
-      </form>
-    </div>
-    </section>
+        <div class="col-lg-5">
+            
+            <div class="bg-black text-white p-4 p-md-5 rounded shadow h-100">
+                <p class="fw-bold fs-1">
+                    Contacta'ns
+                </p>
+                <p class="fs-2">
+                    Museu Barcelona
+                </p>
+                <p class="fst-italic fs-3">
+                    C/ de la Riera Alta, 4, 08001 Barcelona<br>
+                    Telèfon: +34 933 123 456<br>
+                    Horari: Dilluns a Dissabte de 10:00 a 19:00 h
+                </p>
+                <p class="fst-italic fs-3">
+                    <a href="mailto:mmc@mmc.cat" class="link-contacte-email">
+                        mmc@mmc.cat
+                    </a>
+                </p>
+            </div>
+        </div>
+
+    </div> </section>
 
 
         <section id="Entrades">
