@@ -390,6 +390,7 @@ footer {
   /* Un blau fosc, el mateix que l'overlay dels murals */
   background-color: rgb(118, 118, 118);
 }
+
 .footer-link {
 color: white;
 transition: color 0.2s ease;
