@@ -60,6 +60,15 @@ nav a {
     text-decoration: none;
 }
 
+.nav-link {
+    color :white;
+}
+
+.nav-link:hover {
+    color: #e6aa1e;
+    cursor: pointer;
+}
+
 .slider {
   width: 85%;
   margin: auto;
