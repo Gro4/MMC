@@ -1,0 +1,394 @@
+@font-face {
+  font-family: 'punkid'; /* Nombre que le darás a la fuente */
+  src: url('punk kid.ttf') format('truetype'); /* Ruta del archivo */
+  font-weight: normal; /* Opcional */
+  font-style: normal;  /* Opcional */
+}
+
+.logo-navbar {
+  width: 250px; 
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+h1 {
+  font-family: "punkid";             /* Tipus de lletra */
+  font-size: 5rem;                   /* Mida del text */
+  color:black;                  /* Color del text */
+  text-align: center;                /* Centrat horitzontalment */
+  padding-top: 5rem;
+}
+h2 {
+  font-family: "punkid";             /* Tipus de lletra */
+  font-size: 5rem;                   /* Mida del text */
+  color:black;                  /* Color del text */
+  text-align: center;                /* Centrat horitzontalment */
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+h4{
+    font-family: "arial";             /* Tipus de lletra */
+    font-size: 3rem;                   /* Mida del text */
+    color:black;                  /* Color del text */
+    text-align: left;                /* Centrat horitzontalment */
+    margin: 3.5rem;
+  
+}
+
+h5{
+    font-size: 26px;
+    color:black;
+    font-style: bold;
+}
+/* Navegación */
+nav ul {
+    font-family: "punkid";
+    display: flex;
+    padding: 15px;
+}
+
+nav li {
+    margin: 15px;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+.nav-link {
+    color :white;
+}
+
+.nav-link:hover {
+    color: #e6aa1e;
+    cursor: pointer;
+}
+
+.slider {
+  width: 85%;
+  margin: auto;
+  margin-top: 200px;
+  overflow: hidden;
+}
+
+.slider ul {
+  display: flex;
+  padding: 0;
+  width: 500%;
+  animation: cambio 20s infinite ease;
+  animation-direction: alternate;
+}
+
+.slider li {
+  width: 100%;
+  list-style: none;
+}
+
+.slider img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+.contenidor-carrusel {
+  position: relative;
+}
+
+.boto-carrusel {
+  position: absolute; 
+  top: 60%;           
+  left: 5%;          
+  background-color: rgba(230, 170, 29, 0.8);
+  color: #fff;
+  padding: 2rem 2rem;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.boto-carrusel:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+.boto-carrusel p {
+  margin: 0;
+}
+.textruta {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 35px;
+  margin-bottom: 150px; 
+}
+
+.mapa img {
+  width: 80%;
+}
+
+/* GSAP */
+ .sect {
+  display: flex; /* Utilitza Flexbox per a la disposició dels elements interiors */
+  justify-content: center; /* Centra horitzontalment el contingut (eix principal) */
+  align-items: center; /* Centra verticalment el contingut (eix transversal) */
+  position: relative; /* Estableix el context de posicionament per als elements fills posicionats de manera absoluta (com el títol h2) */
+  overflow: hidden; /* Oculta qualsevol contingut que surti dels límits de la secció (important per a animacions d'entrada/sortida) */
+ }
+
+
+ .img-section {
+  width: 85%; /* Fa que la imatge ocupi el 100% de l'amplada de la secció */
+  height: auto; /* Manté la proporció de l'imatge */
+  object-fit: cover; /* Assegura que la imatge cobreixi tota la secció sense estirar-se (pot retallar-se) */
+  opacity: 0; /* ESTAT INICIAL PER A L'ANIMACIÓ: Fa que la imatge sigui completament transparent (invisible al carregar) */
+   transform: scale(0.95); /* ESTAT INICIAL PER A L'ANIMACIÓ: Redueix lleugerament la imatge */
+  }
+
+.mural-overlay {
+  /* 1. Posició: Per sobre de la imatge */
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+
+  /* 2. Aspecte: Fons fosc semitransparent */
+  background-color: rgba(7, 24, 33, 0.7);
+
+  /* 3. Text: Centrat i de color blanc */
+  display: flex;
+  flex-direction: column;
+  
+  /* === AQUEST ÉS EL CANVI PRINCIPAL === */
+  /* Canviem 'center' per 'flex-start' per moure el h3/p a dalt */
+  justify-content: center; 
+  
+  color: white;
+  text-align: center;
+
+  /* 4. Animació: Amagat per defecte i amb transició suau */
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.mural-overlay h3 {
+  font-size: 325%; 
+  color: #e6aa1e;
+}
+
+.mural-overlay p {
+  font-style: italic;
+}
+
+.mural-overlay .text-central {
+ width: 80%;;
+ margin-top: 45px; 
+
+ margin-left: auto;
+ margin-right: auto;
+  
+ font-style: normal;
+ font-size: 120%;
+}
+
+/* L'efecte HOVER */
+.sect:hover .mural-overlay {
+  opacity: 1;
+}
+
+.fotomuseu1 {
+  width: 75%;
+  height: auto;
+  margin-left: 12%;
+  margin-top: 70px;
+  margin-bottom: 70px; 
+}
+
+.fotomuseu3 {
+  width: 75%;
+  height: auto;
+  margin-top: 70px;
+  margin-bottom: 70px; 
+  margin-left: 10%;
+}
+
+.fotomuseu4 {
+   width: 75%;
+  height: auto;
+  margin-left: 12%;
+  margin-top: 70px;
+  margin-bottom: 70px;  
+}
+
+.contacte {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding-bottom: 150px;
+  }
+  
+.info {
+  position: absolute;  
+  margin-left: 850px;
+  margin-top: 100px;
+  color: white;
+}
+
+.museu {
+  position: absolute;  
+  margin-left: 850px;
+  margin-top: 200px;
+  color: white;
+}
+
+.infomuseu {
+  position: absolute;  
+  margin-left: 850px;
+  margin-top: 300px;
+  color: white;
+}
+
+.correu {
+  position: absolute;  
+  margin-left: 850px;
+  margin-top: 426px;
+  color: #A8C7FA;
+}
+
+.link-contacte-email {
+  color: #A8C7FA; 
+}
+
+.link-contacte-email:hover {
+  color: #cde0ff;
+}
+
+.btn {
+  background-color:black;
+color: white;
+}
+
+.btn:hover {
+  background-color: #e6aa1e;
+color: white;
+}
+
+.Horari {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  color: black;
+}
+
+.social-link {
+  color: white; /* Color de la icona per defecte (blanc) */
+  text-decoration: none; /* Treu el subratllat de l'enllaç */
+  font-size: 2.5rem; /* Mida de les icones (ajusta-ho si vols) */
+  margin-right: 1.25rem; /* Espaiat entre les icones */
+  
+  /* Aquesta és la màgia per a una transició suau */
+  transition: color 0.3s ease; 
+}
+
+.social-link:hover {
+  color: #e6aa1e; 
+}
+
+.btn-entrada {
+  background-color: #212529;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* 2. El 'hover' que canvia de color */
+.btn-entrada:hover {
+  background-color: #e6aa1e; /* El teu color groc/daurat */
+  color: black;
+}
+
+/* --- 1. ESTILOS DE TUS CAJAS (Limpiados) --- */
+/* Agrupamos estilos comunes para no repetir código */
+.col1, .col, .col3 {
+  padding: 20px;
+  font-size: 20px;
+  border-radius: 10px;
+  /* IMPORTANTE: Quitamos el margen individual. 
+     El contenedor se encargará ahora del espacio. */
+  margin: 30px 0; 
+  
+  /* Esto hace que las columnas crezcan por igual en Desktop */
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+.col1 {
+  background-color: black;
+  font-weight: bold;
+  color: white;
+}
+
+.col {
+  color: black;
+}
+
+.col3 {
+  background-color: #e6aa1e;
+  font-weight: bold;
+  color: black;
+}
+
+
+.col4 {
+  margin: 0; 
+}
+
+
+
+.contenedor-responsive {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; 
+  padding: 15px; 
+}
+
+@media (min-width: 768px) {
+  
+  .contenedor-responsive {
+    flex-direction: row; 
+  }
+  
+}
+
+
+
+/* Media Query (Ara correctament aïllat) */
+@media (max-width: 768px) {
+  h2 { font-size: 2rem; }
+}
+
+footer {
+  /* Un blau fosc, el mateix que l'overlay dels murals */
+  background-color: rgb(118, 118, 118);
+}
+
+.footer-link {
+color: white;
+transition: color 0.2s ease;
+}
+
+.footer-link:hover {
+color: rgba(230, 170, 29);
+cursor: pointer;
+}
+
+.footer-logo {
+  height: 140px; /* Pots ajustar aquesta alçada com vulguis */
+  width: auto;  /* Manté la proporció */
+}
