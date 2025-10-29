@@ -212,7 +212,7 @@ nav a {
 }
 
 .mural-overlay .text-central {
- width: 80%;
+ width: 80%;;
  margin-top: 60px; 
 
  margin-left: auto;
@@ -291,6 +291,16 @@ nav a {
 
 .link-contacte-email:hover {
   color: #cde0ff;
+}
+
+.btn {
+  background-color:black;
+color: white;
+}
+
+.btn:hover {
+  background-color: #e6aa1e;
+color: white;
 }
 
 .Horari {
