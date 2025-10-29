@@ -101,29 +101,23 @@ nav a {
 }
 
 .boto-carrusel {
-  position: absolute;
-  width: 25%;
-  height:20%;
-  top: 95%; /*ns com baixar-ho mes*/
-  left: 20%;
-  transform: translate(-50%, -50%);
+  position: absolute; 
+  top: 60%;           
+  left: 5%;          
   background-color: rgba(230, 170, 29, 0.8);
   color: #fff;
-  padding: 3rem 3rem; /*canviar*/
+  padding: 2rem 2rem;
   border-radius: 10px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
   transition: background-color 0.3s, transform 0.2s;
   box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
 
 .boto-carrusel:hover {
-  background-color: rgb(255, 255, 255);
-  color:black;
-  transform: translate(-50%, -50%) scale(1.05);
+  background-color: white;
+  color: black;
   cursor: pointer;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
 }
 
 .boto-carrusel p {
